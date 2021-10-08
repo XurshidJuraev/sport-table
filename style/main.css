@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+.sport__form{
+    width: 350px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-left: 450px;
+}
+.type__form{
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 1.4rem;
+}
+.checkbox__name,
+.checkbox__name2,
+.checkbox__name3,
+.checkbox__name4{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+input{
+    display: none;
+}
+input:checked + .checkbox__name{  
+    background-image: url("./../ikonkalar/table-tennis.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked + .checkbox__name2{  
+    background-image: url("./../ikonkalar/basketball-ball.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked + .checkbox__name3{  
+    background-image: url("./../ikonkalar/volleyball-ball.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked + .checkbox__name4{  
+    background-image: url("./../ikonkalar/hockey-puck.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
